@@ -7796,8 +7796,13 @@ main {
 <h4 id="Global-Interpreter-Lock-(GIL)"><strong>Global Interpreter Lock (GIL)</strong><a class="anchor-link" href="#Global-Interpreter-Lock-(GIL)">¶</a></h4><ul>
 <li>Cpython is the reference implmentation of python programming language.</li>
 <li>CPython manages threads by <code>GIL that allows only one thread to be executed</code> at a time. Hence, even on multicore machines, threads will not run in parallel.</li>
-<li>Imagine launching Python code on a dual core machine with <code>1.</code> Two threads within a parent process &amp; <code>2.</code> Two distinct sub-processes.   <center><img alt="No description has been provided for this image" height="540" src="svg/Parallel7a.png" width="540"/></center></li>
+<li>Imagine launching Python code on a dual core machine with<ul>
+<li><code>1.</code> Two threads within a parent process &amp;</li>
+<li><code>2.</code> Two distinct sub-processes</li>
 </ul>
+</li>
+</ul>
+<center><img alt="No description has been provided for this image" height="540" src="svg/Parallel7a.png" width="540"/></center>
 </div>
 </div>
 </div>
