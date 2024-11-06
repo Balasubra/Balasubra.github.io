@@ -7511,11 +7511,8 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Need-for-Parallelizing-computations"><strong>Need for Parallelizing computations</strong><a class="anchor-link" href="#Need-for-Parallelizing-computations">¶</a></h3><h4 id="Workflow">Workflow<a class="anchor-link" href="#Workflow">¶</a></h4><ul>
-<li>Directed Acyclic Graph (DAG): Graphical representation of tasks and connectivity</li>
-</ul>
-<center><b>Pennette con speck e zucchine (Inspiration: Dat.Sci with Dask, J.Daniel)</b></center>
-<center><img alt="No description has been provided for this image" height="540" src="svg/pastas.png" width="540"/></center>
+<h3 id="Need-for-Parallelizing-computations"><strong>Need for Parallelizing computations</strong><a class="anchor-link" href="#Need-for-Parallelizing-computations">¶</a></h3><h4 id="A-Workflow-is-generally-depicted-as-Directed-Acyclic-Graph-(DAG),-which-graphically-represents-tasks-and-their-connectivity">A Workflow is generally depicted as Directed Acyclic Graph (DAG), which graphically represents tasks and their connectivity<a class="anchor-link" href="#A-Workflow-is-generally-depicted-as-Directed-Acyclic-Graph-(DAG),-which-graphically-represents-tasks-and-their-connectivity">¶</a></h4><center>Pennette con speck e zucchine (Inspiration: Dat.Sci with Dask, J.Daniel)</center>
+<center><img align="center" alt="No description has been provided for this image" height="540" src="svg/pastas.png" width="630"/></center>
 </div>
 </div>
 </div>
@@ -7527,10 +7524,7 @@ main {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h4 id="Scale-UP-vs-OUT">Scale UP vs OUT<a class="anchor-link" href="#Scale-UP-vs-OUT">¶</a></h4><ul>
-<li>Scaling issue<ul>
-<li>Lets assume <code>preparing pasta for 200 clients</code>, How can I scale my workload ?</li>
-</ul>
-</li>
+<li>Scaling issue: Lets assume <code>preparing pasta for 200 clients</code>, How can I scale my workload ?</li>
 </ul>
 <table>
 <thead>
@@ -7542,11 +7536,11 @@ main {
 <tbody>
 <tr>
 <td>Scale UP</td>
-<td>Buy big machine to accelerate the cooking</td>
+<td>Buy big electrodomestics</td>
 </tr>
 <tr>
 <td>Scale OUT</td>
-<td>Distribute the cooking to multiple chefs</td>
+<td>Distribute workload to multiple chefs</td>
 </tr>
 </tbody>
 </table>
@@ -7561,7 +7555,7 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<center><img alt="No description has been provided for this image" height="270" src="svg/scale.png" width="360"/></center>
+<center><img alt="No description has been provided for this image" height="290" src="svg/scale.png" width="450"/></center>
 </div>
 </div>
 </div>
@@ -7576,11 +7570,11 @@ main {
 <li>Scale OUT challenges<ul>
 <li>Lack of enough resources for all the Chefs</li>
 <li>Working efficiency of Chefs or their failure</li>
-<li>Two Chefs trying to use same resource at the same time</li>
+<li>Two chefs trying to use same resource simultaneously</li>
 </ul>
 </li>
 </ul>
-<img alt="No description has been provided for this image" height="360" src="svg/orchestrate.png" width="450"/>
+<center><img alt="No description has been provided for this image" height="450" src="svg/orchestrate.png" width="540"/></center>
 </div>
 </div>
 </div>
@@ -7592,12 +7586,18 @@ main {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h4 id="Real-world-application">Real-world application<a class="anchor-link" href="#Real-world-application">¶</a></h4><ul>
-<li>Assume having a large dataset to analyze, which doesnt fit into the memory. <strong>How can we scale the task?</strong><ul>
-<li>Scale UP: Update your hardware( <code>is this feasible/cost-effective everytime data size increases ?</code> )</li>
-<li>Scale OUT: Divide the data into chunks and disctribute across multiple <strong>C/GPU</strong>s to process in parallel</li>
+<li>Suppose we have a large dataset to analyse that does not fit in memory. How can we scale the task?</li>
+</ul>
+<ol>
+<li>Scale UP<ul>
+<li>Update your hardware (<code>is this cost-effective everytime data size increases ?</code> )</li>
 </ul>
 </li>
+<li>Scale OUT<ul>
+<li>Divide the data into chunks and disctribute across multiple <strong>C/GPU</strong>s to process in parallel</li>
 </ul>
+</li>
+</ol>
 </div>
 </div>
 </div>
@@ -7608,7 +7608,7 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<center><img alt="No description has been provided for this image" height="450" src="svg/dscale.png" width="540"/></center>
+<center><img alt="No description has been provided for this image" height="540" src="svg/dscale.png" width="540"/></center>
 </div>
 </div>
 </div>
@@ -7658,10 +7658,8 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Parallelization"><strong>Parallelization</strong><a class="anchor-link" href="#Parallelization">¶</a></h4><h5 id="Computer-Architecture"><strong>Computer Architecture</strong><a class="anchor-link" href="#Computer-Architecture">¶</a></h5><ul>
-<li>Thread : <code>a sequence</code> of instructions given to the CPU<center><img alt="No description has been provided for this image" height="450" src="svg/Parallel1.png" width="540"/></center>
-</li>
-</ul>
+<h4 id="Parallelization"><strong>Parallelization</strong><a class="anchor-link" href="#Parallelization">¶</a></h4><h5 id="Evolution-of-computer-architecture"><strong>Evolution of computer architecture</strong><a class="anchor-link" href="#Evolution-of-computer-architecture">¶</a></h5><center>Thread : `a sequence` of instructions given to the CPU</center>
+<center><img alt="No description has been provided for this image" height="450" src="svg/Parallel1.png" width="540"/></center>
 </div>
 </div>
 </div>
@@ -7688,12 +7686,15 @@ main {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h4 id="Process-vs-Threads"><strong>Process vs Threads</strong><a class="anchor-link" href="#Process-vs-Threads">¶</a></h4><ul>
-<li><code>Process</code> is an instance of a computer program that is executed by one or more threads.<ul>
+<li><code>Process</code><ul>
+<li>An instance of a computer program that is executed by one or more threads.</li>
 <li>A process may launch sub-processes, or it can only run a single Main thread.</li>
 </ul>
 </li>
-<li><code>Thread</code> is the smallest sequence of programmed instructions that a OS can manage independently.<ul>
-<li>Threads within the same process share memory space and are executed on multiple cores or on the same core concurrently.<center><img alt="No description has been provided for this image" height="360" src="svg/Parallel6.png" width="450"/></center>
+<li><code>Thread</code><ul>
+<li>Smallest sequence of programmed instructions that a OS can manage independently.</li>
+<li>Threads within the same process share memory space.</li>
+<li>Threads are executed on multiple cores simultaneously or on the same core concurrently.<center><img alt="No description has been provided for this image" height="360" src="svg/Parallel6.png" width="360"/></center>
 </li>
 </ul>
 </li>
@@ -7725,12 +7726,16 @@ main {
 <td>Quick creation</td>
 </tr>
 <tr>
-<td>No synchronization</td>
-<td>Synchronization required</td>
+<td>Not GIL regulated</td>
+<td>GIL regulated</td>
+</tr>
+<tr>
+<td>Represent parallelism</td>
+<td>Represent concurrency</td>
 </tr>
 </tbody>
 </table>
-<center><img alt="No description has been provided for this image" height="360" src="svg/Parallel5a.png" width="450"/></center>
+<center><img alt="No description has been provided for this image" height="450" src="svg/Parallel5a.png" width="450"/></center>
 </div>
 </div>
 </div>
@@ -7742,8 +7747,8 @@ main {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h4 id="Process-vs-Threads"><strong>Process vs Threads</strong><a class="anchor-link" href="#Process-vs-Threads">¶</a></h4><ul>
-<li>Each process has its memory and code, which is shared between its threads.</li>
-<li>Memory is not shared between processes</li>
+<li>Each process has its memory and code, which is shared only between its threads.</li>
+<li>Memory is not shared between different processes.</li>
 </ul>
 <center><img alt="No description has been provided for this image" height="270" src="svg/Parallel2.png" width="360"/></center>
 </div>
@@ -7757,7 +7762,7 @@ main {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h4 id="Process-vs-Threads"><strong>Process vs Threads</strong><a class="anchor-link" href="#Process-vs-Threads">¶</a></h4><h5 id="Let's-imagine-that-we-have-a-BigTask"><strong>Let's imagine that we have a BigTask</strong><a class="anchor-link" href="#Let's-imagine-that-we-have-a-BigTask">¶</a></h5><ul>
-<li>To execute the task in parallel, we can divide it into subtasks</li>
+<li>To execute the Bigtask in parallel, we can divide it into subtasks</li>
 <li>The subtasks can be executed using either processes or threads based parallization</li>
 </ul>
 <center><img alt="No description has been provided for this image" height="270" src="svg/OGSa.png" width="630"/></center>
@@ -7789,8 +7794,9 @@ main {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h4 id="Global-Interpreter-Lock-(GIL)"><strong>Global Interpreter Lock (GIL)</strong><a class="anchor-link" href="#Global-Interpreter-Lock-(GIL)">¶</a></h4><ul>
-<li>In Python, threads are managed by <code>GIL</code>, which <code>allows only one thread to be executed</code> at a time. Hence, even if you have multiple threads, they will not run in parallel on multiple cores</li>
-<li>Imagine launching Python code on a dual core machine with <code>1.</code> Two threads within a parent process &amp; <code>2.</code> Two distinct sub-processes.   <center><img alt="No description has been provided for this image" height="540" src="svg/Parallel7a.png" width="630"/></center></li>
+<li>Cpython is the reference implmentation of python programming language.</li>
+<li>CPython manages threads by <code>GIL that allows only one thread to be executed</code> at a time. Hence, even on multicore machines, threads will not run in parallel.</li>
+<li>Imagine launching Python code on a dual core machine with <code>1.</code> Two threads within a parent process &amp; <code>2.</code> Two distinct sub-processes.   <center><img alt="No description has been provided for this image" height="540" src="svg/Parallel7a.png" width="540"/></center></li>
 </ul>
 </div>
 </div>
@@ -7802,8 +7808,16 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<center>Scenario 1,shown aboven is similar to running the threads concurrently on a single core</center>
+<center>Scenario 1,shown above is similar to running the threads concurrently on a single core</center>
 <center><img alt="No description has been provided for this image" src="svg/Parallel7b.png"/></center>
+<ul>
+<li><code>Remember</code><ul>
+<li>GIL is not used other implementations such as Jpython or IronPython.</li>
+<li>Numpy for example is GIL free, many operations are done by C codes.</li>
+<li><code>Good news</code>: CPython 3.13 makes <a href="https://docs.python.org/3/glossary.html#term-global-interpreter-lock:~:text=As%20of%20Python%203.13%2C%20the%20GIL%20can%20be%20disabled%20using%20the%20%2D%2Ddisable%2Dgil%20build%20configuration.%20After%20building%20Python%20with%20this%20option%2C%20code%20must%20be%20run%20with%20%2DX%20gil%3D0%20or%20after%20setting%20the%20PYTHON_GIL%3D0%20environment%20variable">GIL optional</a></li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -7851,7 +7865,7 @@ main {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h4 id="The-HPC-context"><strong>The HPC context</strong><a class="anchor-link" href="#The-HPC-context">¶</a></h4><ul>
-<li>An HPC cluster is a collection of many separate servers (computers), called nodes, connected by a high-bandwidth interconnect.</li>
+<li>A HPC cluster is a collection of many separate servers (computers), called nodes, connected by a high-bandwidth interconnect.</li>
 <li><code>Remember</code> : Each compute node is equipped with multiple cores (also GPUs) and memory<ul>
 <li>Leonardo Booster: 32 cores,4 GPUs, 500GB RAM per node</li>
 <li>G100: 48 cores, 320GB RAM per node
@@ -7886,49 +7900,44 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="The-HPC-context"><strong>The HPC context</strong><a class="anchor-link" href="#The-HPC-context">¶</a></h4><h2 id="%F0%9F%A4%94-Imagine">🤔 Imagine<a class="anchor-link" href="#%F0%9F%A4%94-Imagine">¶</a></h2><h5 id="--A-HPC-user-may-request-the-SLURM-(resource-manager)-to-allocate-nodes-for-parallel-applications.">- A HPC user may request the SLURM (resource manager) to allocate nodes for parallel applications.<a class="anchor-link" href="#--A-HPC-user-may-request-the-SLURM-(resource-manager)-to-allocate-nodes-for-parallel-applications.">¶</a></h5><h5 id="--So,-you-may-parallalize-the-code-to-run-within-a-single-node-or-distribured-across-multiple-nodes-(connected-by-high-speed-network).">- So, you may parallalize the code to run within a single node or distribured across multiple nodes (connected by high-speed network).<a class="anchor-link" href="#--So,-you-may-parallalize-the-code-to-run-within-a-single-node-or-distribured-across-multiple-nodes-(connected-by-high-speed-network).">¶</a></h5><center><img alt="No description has been provided for this image" height="630" src="svg/Parallel5b.png" width="720"/></center>
+<h4 id="The-HPC-context"><strong>The HPC context</strong><a class="anchor-link" href="#The-HPC-context">¶</a></h4><h4 id="%F0%9F%A4%94-Imagine">🤔 Imagine<a class="anchor-link" href="#%F0%9F%A4%94-Imagine">¶</a></h4><h6 id="--A-HPC-user-may-request-the-SLURM-(resource-manager)-to-allocate-nodes-for-parallel-applications.">- A HPC user may request the SLURM (resource manager) to allocate nodes for parallel applications.<a class="anchor-link" href="#--A-HPC-user-may-request-the-SLURM-(resource-manager)-to-allocate-nodes-for-parallel-applications.">¶</a></h6><h6 id="--We-may-parallalize-the-code-to-run-within-a-single-node-or-distribured-across-multiple-nodes-(connected-by-high-speed-network).">- We may parallalize the code to run within a single node or distribured across multiple nodes (connected by high-speed network).<a class="anchor-link" href="#--We-may-parallalize-the-code-to-run-within-a-single-node-or-distribured-across-multiple-nodes-(connected-by-high-speed-network).">¶</a></h6><center><img alt="No description has been provided for this image" src="svg/Parallel5b.png"/></center>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span> 
-</pre></div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Part-4"><strong>Part-4</strong><a class="anchor-link" href="#Part-4">¶</a></h2><p><strong>Parallel program tools</strong></p>
+<ul>
+<li>Programming tools</li>
+<li>Data Analysis tools</li>
+</ul>
 </div>
 </div>
 </div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span> 
-</pre></div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h4 id="Progamming-tools"><strong>Progamming tools</strong><a class="anchor-link" href="#Progamming-tools">¶</a></h4><h4 id="Overview-of-Pytool-for-parallel-processing"><p style="text-align:center">Overview of Pytool for parallel processing</p><a class="anchor-link" href="#Overview-of-Pytool-for-parallel-processing">¶</a></h4><center><img alt="No description has been provided for this image" src="svg/Parallel8.png"/></center>
 </div>
 </div>
 </div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h4 id="Data-Analysis-tools"><strong>Data Analysis tools</strong><a class="anchor-link" href="#Data-Analysis-tools">¶</a></h4><h4 id="Overview-of-Pytool-for-data-analysis"><p style="text-align:center">Overview of Pytool for data analysis</p><a class="anchor-link" href="#Overview-of-Pytool-for-data-analysis">¶</a></h4><center><img alt="No description has been provided for this image" height="450" src="svg/Parallel9.png" width="540"/></center>
 </div>
 </div>
 </div>
